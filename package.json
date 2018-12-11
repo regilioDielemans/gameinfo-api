@@ -1,0 +1,30 @@
+{
+  "name": "nosql-opdr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "SET NODE_ENV=test & nodemon --exec \"mocha --recursive -R min\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambervb/Nosql-opdr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambervb/Nosql-opdr/issues"
+  },
+  "homepage": "https://github.com/ambervb/Nosql-opdr#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.13",
+    "neo4j-driver": "^1.5.0",
+    "npm": "6.4.1",
+    "supertest": "^3.3.0"
+  }
+}
