@@ -12,7 +12,7 @@ module.exports = {
    getOntwikkelaars(req,res){
       console.log('Reaches the get controller');
       const {name}  = req.query;
-      if(title === undefined){
+      if(name === undefined){
       Ontwikkelaar.find()
         .then((ontwikkelaars) => {
           res.json(ontwikkelaars);
