@@ -18,7 +18,10 @@ module.exports = {
           res.json(ontwikkelaars);
         });
       }else{
-         Ontwikkelaar.findOne({Name: name})
+         Ontwikkelaar.findOne({Name: name}).populate({
+            path:'games',
+            model:'game'
+          })
          .then((ontwikkelaar) => {
           res.json(ontwikkelaar);
          });
