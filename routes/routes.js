@@ -9,7 +9,7 @@ const ontwikkelaarController = require('../controllers/OntwikkelaarController');
 
 
 module.exports = (app) => {
-  app.use(cors());
+  //app.use(cors());
   
   //games
   app.post('/api/games', gameController.create);
